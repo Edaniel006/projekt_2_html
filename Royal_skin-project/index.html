@@ -28,7 +28,6 @@
     animation: AnimationName 6s ease infinite;
 }
 
-
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 51%}
@@ -89,7 +88,15 @@
 
         /* Parallax image */
         .parallax {
-            background-image: url('csoport.png'); 
+            background-image: url('bentlogo.png'); 
+            height: 600px; 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parallax2 {
+            background-image: url('koponya.jpg'); 
             height: 600px; 
             background-attachment: fixed;
             background-position: center;
@@ -118,6 +125,21 @@
 
 
         }
+    .hirek {
+        display: flex;
+            align-items: center;
+            justify-content: space-between; 
+            width: 80%; 
+            margin: 80px auto; 
+            opacity: 0;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            padding: 20px;
+            transition: opacity 4s ease-out; 
+
+    }
     </style>
 </head>
 <body>
@@ -169,12 +191,13 @@
     </script>
     
     </script>
-<div>  <h2>Hírek</h2>
+<div id="hirek">  <h2>Bemutatkozás</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
     <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
     <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
     <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.</p>
-    <p>Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>  <h2>Hírek</h2>
+    <p>Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>  
+    <h2>Hírek</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
     <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
     <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
@@ -184,7 +207,7 @@
     <div class="parallax"></div>
 
     
-    <div>
+    <div id="hirek"> </div>>
         <h2>Hírek</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
         <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
@@ -192,6 +215,19 @@
         <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.</p>
         <p>Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
         </div>
+        <div class="parallax2"></div>
+        <div id="hirek">
+            
+
+
+            <h2>Hírek</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+            <p>Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor.</p>
+            <p>Pellentesque nibh. Aenean quam. In scelerisque sem at dolor.</p>
+            </div>
+        
         <h1 align="center">Itt találsz minket!</h1>
         <!-- Div to display the map -->
         <p align="center"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2672.070924395972!2d22.319082076828025!3d47.95435256389863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47387b3d288905af%3A0xe9d568947d196a1a!2sroyalSKIN%20Tattoo!5e0!3m2!1shu!2shu!4v1732540770302!5m2!1shu!2shu" width="1240" height="832" style="border: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
